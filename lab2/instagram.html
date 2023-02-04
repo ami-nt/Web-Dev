@@ -3,17 +3,127 @@
         <title>Instagram login page</title>
         <style>
             body {
-                background-color: #fafafa;
+                background-color:  rgba(240,242,245,255);;
             }
             .rec {
                 position: absolute;
-                top: 150px;
-                left: 500px;
-                
+                left: 665px;
+                background-color: white;
+                width: 346px;
+                box-shadow: 3px 3px 3px -4px black;
+            }
+            .rec1 {
+                top: 50px;
+                height: 395px;
+            }
+            .rec2 {
+                top: 455px;
+                height: 62px;
+            }
+            .logo {
+                position: absolute;
+                top: 94px;
+                left: 750.5px;
+                background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yr/r/NL0hPV-L09m.png);
+                background-position: 0px 0px;
+                background-size: 176px 186px;
+                width: 174px;
+                height: 50px;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+            .family {
+                font-family: 'Segoe UI';
+            }
+            .in {
+                border: 1px solid #cacdd1;
+                vertical-align: middle;
+                padding-left: 9px;
+                font-size: 11.5px;
+            }
+            .input1 {
+                position: absolute;
+                top: 184px;
+                left: 703px;
+                width: 268px;
+                height: 36.5px;
+                border-radius: 3px;
+            }
+            .input2 {
+                position: absolute;
+                top: 227px;
+                left: 703px;
+                width: 268px;
+                height: 36.5px;
+                border-radius: 3px;
+            }
+            .sub {
+                position: absolute;
+                top: 278px;
+                left: 703px;
+                height: 32.5px;
+                width: 268px;
+                color: #1d2129;
+                border-radius: 8px;
+                font-size: 13px;
+                border: 0.0001px solid #cacdd1;
+                background-color: rgba(77,181,249,255);
+                color: white;
+                font-weight: bold;
+            }
+            .line {
+                width: 103px;
+                height: 0.3px;
+                position: absolute;
+                top: 334.5px;
+                background-color: rgb(202, 202, 202);
+            }
+            .l1 {
+                left: 702.5px;
+            }
+            .l2 {
+                left: 870.5px;
+            }
+            .or {
+                font-size: 18px;
+                color: rgba(146,150,159,255);
+                position: absolute;
+                top: 303.5px;
+                left: 823px;
+                font-weight: 480;
+            }
+            .forget {
+                color:#00376b;
+                position: absolute;
+                top: 396.5px;
+                left: 792.5px;
+                font-size: 12px;
+                font-weight: 400;
+            }
+            .reg {
+                text-align: center;
+                margin-right: 6.5px;
+                margin-top: 23px;
+                font-size: 14px;
+                color: #1d2129;
+            }
+            .z {
+                color: #2295f6;
             }
         </style>
     </head>
     <body>
-        <div class="rec"></div>
+        <div class="rec rec1"></div>
+        <div class="logo"></div>
+        <input class="input1 family in" type="email" placeholder="Телефон, имя пользователя или эл. адрес" required>
+        <input class="input2 family in" type="password" placeholder="Пароль" required>
+        <button class="sub family" type="submit">Войти</button>
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+        <p class="or family">или</p>
+        <p class="forget family">Забыли пароль?</p>
+        <div class="rec rec2">
+            <p class="reg family">У вас ещё нет аккаунта? <span class="z">Зарегистрироваться</span></p>
+        </div>
     </body>
 </html>
