@@ -2,10 +2,6 @@
     <head>
         <title>Facebook login page</title>
         <style>
-            <!-- .logo-p1 {
-                
-                
-            } -->
             body {
                 height: 899px;
                 width: 895.5px;
@@ -42,6 +38,14 @@
                 box-shadow: 3px 3px 3px -4px black;
                 border-radius: 10px;
             }
+            .family {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .in {
+                border: 1px solid #cacdd1;
+                vertical-align: middle;
+                padding-left: 15px;
+            }
             .input1 {
                 position: absolute;
                 top: 147px;
@@ -51,12 +55,6 @@
                 color: #1d2129;
                 border-radius: 8px;
                 font-size: 17px;
-                border: 1px solid #cacdd1;
-                padding-left: 15px;
-            }
-            .input1:hover {
-                color: #1d2129;
-                border: 1px solid #568cd3;
             }
             .input2 {
                 position: absolute;
@@ -67,13 +65,9 @@
                 color: #1d2129;
                 border-radius: 8px;
                 font-size: 17px;
-                border: 1px solid #cacdd1;
                 /*margin: 2px;*/
-                vertical-align: middle;
-                font-family: Helvetica, Arial, sans-serif;
-                padding-left: 15px;
             }
-            .input2:hover {
+            .input1:hover, .input2:hover {
                 color: #1d2129;
                 border: 1px solid #568cd3;
             }
@@ -86,11 +80,13 @@
                 color: #1d2129;
                 border-radius: 8px;
                 font-size: 20px;
-                border: 1px solid #cacdd1;
+                border: 0.0001px solid #cacdd1;
                 background-color: rgba(24,119,242,255);
                 color: white;
-                font-family:Arial, Helvetica, sans-serif;
                 font-weight: bold;
+            }
+            .sub:hover {
+                background-color: #166bda;
             }
             .forget {
                 color:#307df2;
@@ -98,12 +94,8 @@
                 position: absolute;
                 top: 330px;
                 left: 865px;
-                font-family: Arial, Helvetica, sans-serif;
                 font-size: 14px;
                 font-weight: 500;
-            }
-            .forget:hover {
-                text-decoration: underline;
             }
             .line {
                 width: 364px;
@@ -125,11 +117,59 @@
                 border: 1px solid #cacdd1;
                 background-color: rgba(66,183,42,255);
                 color: white;
-                font-family:Arial, Helvetica, sans-serif;
                 font-weight: bold;
             }
             .new-acc:hover{
                 background-color: #3ba526;
+            }
+            .p2 {
+                width: 430px;
+                position: absolute;
+                top: 495px;
+                left: 705px;
+                font-size: 14px;
+                text-align: center;
+            }
+            .cr {
+                font-weight: 700;
+            }
+            .final {
+                font-size: 12px;
+                color: #8a8d91;
+            }
+            .languages {
+                position: absolute;
+                top: 736px;
+                left: 137px;
+            }
+            .l {
+                margin: 5px;
+            }
+            .line {
+                width: 980px;
+                height: 0.3px;
+                position: absolute;
+                left: 142px;
+                top: 775px;
+                background-color: rgb(202, 202, 202);
+            }
+            .opt {
+                position: absolute;
+                top: 774px;
+                left: 134px;
+            } 
+            .l1 { 
+                margin: 9px;
+            }
+            .end {
+                font-size: 11px;
+                color: #8a8d91;
+                position: absolute;
+                top: 890px;
+                left: 144px;
+            }
+            .cr:hover, .l:hover, .l1:hover, .forget:hover  {
+                text-decoration: underline;
             }
         </style>
     </head>
@@ -140,13 +180,29 @@
             <p class="p1">Facebook помогает вам всегда <br>оставаться на связи и общаться со <br>своими знакомыми.</p>
         </div>
         <div class="authorization"></div>
-        <input class="input1" type="email" placeholder="Электронный адрес или номер телефона" required>
-        <input class="input2" type="password" placeholder="Пароль" required>
-        <button class="sub" type="submit">Вход</button>
+        <input class="input1 family in" type="email" placeholder="Электронный адрес или номер телефона" required>
+        <input class="input2 family in" type="password" placeholder="Пароль" required>
+        <button class="sub family" type="submit">Вход</button>
         <!-- <input class="sub" type="submit" value="Вход"> -->
-        <p class="forget">Забыли пароль?</p>
+        <p class="forget family">Забыли пароль?</p>
         <div class="line"></div>
-        <button class="new-acc">Создать новый аккаунт</button>
+        <button class="new-acc family">Создать новый аккаунт</button>
+        <div class="create-acc">
+            <p class="p2 family"><span class="cr">Создать Cтраницу</span> знаменитости, музыкальной группы или <br> компании.</p>
+        </div>
+        <div class=" final family languages"> 
+            <p><span class="l">Русский</span><span class="l">English (US)</span><span class="l">Türkçe</span><span class="l">Bahasa Indonesia</span><span class="l">中文(简体)</span><span class="l">Қазақша</span><span class="l">Deutsch</span><span class="l">한국어</span><span class="l">Shqip</span><span class="l">Español</span><span class="l">Português (Brasil)</span></p>
+        </div>
+        <div class="line2"></div>
+        <div class="final opt">
+            <p><span class="l1">Регистрация</span><span class="l1">Вход</span><span class="l1">Messenger</span><span class="l1">Facebook Lite</span><span class="l1">Watch</span><span class="l1">Места</span><span class="l1">Игры</span><span class="l1">Marketplace</span><span class="l1">Meta Pay</span><span class="l1">Oculus</span><span class="l1">Portal</span><span class="l1">Instagram</span><span class="l1">Bulletin</span></p>
+            <p><span class="l1">Благотворительные акции</span><span class="l1">Услуги</span><span class="l1">Центр информации о выборах</span><span class="l1">Политика конфиденциальности</span><span class="l1">Центр конфиденциальности</span><span class="l1">Группы</span><span class="l1">Информация</span></p>
+            <p><span class="l1">Создать рекламу</span><span class="l1">Создать страницу</span><span class="l1">Разработчикам</span><span class="l1">Вакансии</span><span class="l1">Файлы cookie</span><span class="l1">Рекламные предпочтения</span><span class="l1">Условия использования</span><span class="l1">Справка</span></p>
+            <p><span class="l1">Загрузка контактов и лица, не являющиеся пользователями</span></p>
+        </div>
+        <div class="end">
+            <span>Meta © 2023</span>
+        </div>
         </body>
 
 
