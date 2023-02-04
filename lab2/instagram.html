@@ -3,7 +3,9 @@
         <title>Instagram login page</title>
         <style>
             body {
-                background-color:  rgba(240,242,245,255);;
+                background-color:  rgba(240,242,245,255);
+                height: 775px;
+                width: 895.5px;
             }
             .rec {
                 position: absolute;
@@ -35,11 +37,14 @@
             .family {
                 font-family: 'Segoe UI';
             }
+            .pointer {
+                cursor: pointer;
+            }
             .in {
                 border: 1px solid #cacdd1;
                 vertical-align: middle;
                 padding-left: 9px;
-                font-size: 11.5px;
+                font-size: 12px;
             }
             .input1 {
                 position: absolute;
@@ -109,6 +114,60 @@
             }
             .z {
                 color: #2295f6;
+                font-weight: 500;
+            }
+            .download {
+                font-size: 14px;
+                color: #1d2129;
+                position: absolute;
+                top: 520px;
+                left: 758px;
+            }
+            .google {
+                position: absolute;
+                top: 568px;
+                left: 711px;
+            }
+            .micros {
+                position: absolute;
+                top: 568px;
+                left: 853px;
+            }
+            .opt {
+                position: absolute;
+                top: 663px;
+                left: 52px;
+            }
+            .l {
+                font-size: 12px;
+                margin: 8px;
+                color: rgba(146,150,159,255);
+            }
+            .l:hover {
+                text-decoration: underline;
+            }
+            .end {
+                position: absolute;
+                top: 698px;
+                left: 516px;
+            }
+            .c {
+                font-size: 12px;
+                color: rgba(146,150,159,255);
+                margin: 8px;
+            }
+            .fb-logo {
+                position: absolute;
+                top: 372px;
+                left: 751px;
+            }
+            .fc {
+                color: rgba(56,81,133,255);
+                position: absolute;
+                top: 356px;
+                left: 777px;
+                font-size: 14px;
+                font-weight: 500;
             }
         </style>
     </head>
@@ -121,9 +180,19 @@
         <div class="line l1"></div>
         <div class="line l2"></div>
         <p class="or family">или</p>
-        <p class="forget family">Забыли пароль?</p>
+        <p class="forget family pointer">Забыли пароль?</p>
         <div class="rec rec2">
-            <p class="reg family">У вас ещё нет аккаунта? <span class="z">Зарегистрироваться</span></p>
+            <p class="reg family">У вас ещё нет аккаунта? <span class="z pointer">Зарегистрироваться</span></p>
         </div>
+        <p class="download family">Установите приложение.</p>
+        <img class="google pointer" src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" alt="Google Play" width="134">
+        <img class="micros pointer" src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" alt="Microsoft" width="111">
+        <div class="opt family pointer">
+            <p><span class="l">Meta</span><span class="l">Информация</span><span class="l">Блог</span><span class="l">Вакансия</span><span class="l">Помощь</span><span class="l">API</span><span class="l">Конфиденциальность</span><span class="l">Условия</span><span class="l">Популярные аккаунты</span><span class="l">Места</span><span class="l">Instagram Lite</span><span class="l">Загрузка контактов и лица, не являющиеся пользователями</span></p>
+        </div>
+        <div class="end family">
+            <p><span class="pointer c">Русский ^</span><span class="c">© 2023 Instagram from Meta</span></p>
+        </div>
+        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522tugge01cywnnc1yawdvb1ukq7gx1l0we3d18gnarjpekyi2x96h8%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dru_RU%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D9c2b5a7e-8fab-454e-a646-f1aab9daada8%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522tugge01cywnnc1yawdvb1ukq7gx1l0we3d18gnarjpekyi2x96h8%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru_RU&pl_dbl=0"><img class="fb-logo" src="https://w7.pngwing.com/pngs/666/551/png-transparent-first-baptist-church-of-belleview-london-2-brighton-ultra-challenge-thames-path-challenge-facebook-facebook-logo-miscellaneous-blue-rectangle.png" width="19"><p class="fc family">   Войти через Facebook</p></a>
     </body>
 </html>
