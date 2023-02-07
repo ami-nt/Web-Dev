@@ -1,0 +1,528 @@
+<html>
+    <head>
+        <title>Microsoft login page</title>
+        <style>
+            .family {
+                font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            .big-image-1 {
+                position: absolute;
+                left: 0px;
+                top: 56px; 
+                width: 1263px;
+            }
+            .big-image-2 {
+                position: absolute;
+                top: 1212.5px;
+                width: 1136px;
+            }
+            .big-image-1:hover, .big-image-2:hover {
+                cursor: pointer;
+            }
+            .micro-logo {
+                position: absolute;
+                top: 14px;
+                left: 73px;
+            }
+            .text {
+                color: white;
+            }
+            .text-1 {
+                position: absolute;
+                top: 185px;
+                left: 111px;
+                font-size: 29px;
+                font-weight: 600;
+            }
+            .text-2 {
+                position: absolute;
+                top: 219.5px;
+                left: 111.2px;
+                font-size: 29px;
+                font-weight: 600;
+               
+            }
+            .text1 {
+                position: absolute;
+                top: 300px;
+                left: 108px;
+                font-size: 16px;
+                /*font-weight: 600;*/
+            }
+            .l {
+                margin: 3px;
+            }
+            button {
+                position: absolute;
+                font-size: 16px;
+                border: 0.0001px solid rgba(0,103,184,255);
+                color: white;
+                font-weight: 600;
+                background-color: rgba(0,103,184,255);
+                border-radius: 2px;
+            }
+            .checking {
+                top: 398px;
+                left: 111px;
+                width: 241.5px;
+                height: 40px;
+            }
+            .checking:hover, .downloading:hover {
+                background-color: rgba(0,93,165,255);
+                cursor: pointer;
+            }
+            .downloading {
+                top: 1542px;
+                left: 168px;
+                width: 87px;
+                height: 40px;
+            }
+            .text2 {
+                color: #262626;
+                position: absolute;
+                left: 210.5px;
+                top: 5.5px;
+                font-size: 13px;
+            }
+            .text2-1:hover, .prod-1:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            .text2-1 {
+                padding-right: 21px;
+            }
+            .prod-1 {
+                color: #262626;
+                position: absolute;
+                left: 942.5px;
+                top: 18.5px;
+                font-size: 13px;
+            }
+            .prod-1::after {
+                content: "˅";
+                font-size: 12px;
+                font-weight: 400;
+                margin-left: 6px;
+            }
+            .login {
+                position: absolute;
+                left: 1160px;
+                top: 11.5px;
+                width: 32px;
+            }
+            .find {
+                position: absolute;
+                left: 1114.39px;
+                top: 10.99px;
+                cursor: pointer;
+            }
+            .m-365 {
+                left: 63px;
+            }
+            .m-edge {
+                left: 353px;
+            }
+            .drive {
+                left: 643px;
+            }
+            .note {
+                left: 933px;
+            }
+            .images {
+                position: absolute;
+                top: 694px;
+                width: 266px;
+            }
+            .images1 {
+                position: absolute;
+                top: 1900px;
+                width: 266px;
+            }
+            .point {
+                cursor: pointer;
+            }
+            .under {
+                position: absolute;
+                top: 838px;
+                width: 266px;
+                font-weight: 600;
+            }
+            .under1 {
+                position: absolute;
+                top: 2067px;
+                width: 270px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+            .p {
+                position: absolute;
+                top: 899px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: left;
+            }
+            .l1 {
+                margin: 3px 0px 3px;
+            }
+            .p1 {
+                color: #0067b8;
+                position: absolute;
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .one {
+                top: 1030px;
+            }
+            .one1::after {
+                content: ">";
+                margin: -8px 0px 0px;
+                text-decoration: none;
+            }
+            .one1:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .six {
+                top: 1070px;
+            }
+            .download {
+                top: 1005px;
+            }
+            .download1 {
+                top: 2192px;
+            }
+            .podrobnee {
+                top: 1006px;
+            }
+            .know {
+                top: 958px;
+            }
+            .out {
+                position: absolute;
+                left: 171px;
+            }
+            .outlook1 {
+                top: 1384px;
+                font-size: 29px;
+                font-weight: 500;
+            }
+            .l2 {
+                margin: -3px;
+            }
+            .outlook2 {
+                top: 1467.5px;
+                font-size: 16px;
+            }
+            .l3 {
+                margin: 3px -3px;
+            }
+            .business {
+                position: absolute;
+                top: 1818px;
+                font-size: 29px;
+                font-weight: 600;
+                text-align: left;
+            }
+            .l4 {
+                margin: -3px 0px -3px;
+            }
+            .p2 {
+                position: absolute;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: left;
+            }
+            .p2-1 {
+                top: 2135px;
+            }
+            .p2-2{
+                top: 2105px;
+            }
+            .free {
+                top: 2220px;
+            }
+            .podrobnee1 {
+                top: 2270px;
+            }
+            .now {
+                top:2220px;
+            }
+            .grey-back {
+                position: absolute;
+                top: 2500px;
+                left: 0px;
+                background-color: #f2f2f2;
+                height: 452px;
+                width: 1263px;
+            }
+            .h {
+                color: #616161;
+                position: absolute;
+                top: 2523.5px;
+                text-align: left;
+            }
+            .start {
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .s {
+                font-size: 11px;
+            }
+            .s:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .l5 {
+                margin: 12.5px;
+            }
+            .h1 {
+                left: 50.5px;
+            }
+            .h2 {
+                left: 252.5px;
+            }
+            .h3 {
+                left: 442.5px;
+                width: 180px;
+            }
+            .h4 {
+                left: 619.5px;
+            }
+            .h5 {
+                left: 820.5px;
+            }
+            .h6 {
+                left: 1010.5px;
+            }
+            .globus {
+                position: absolute;
+                top: 2908px;
+                left: 52px;
+            }
+            .lan {
+                color: #616161;
+                position: absolute;
+                top: 2901.5px;
+                left: 93.5px;
+            }
+            .end {
+                color: #616161;
+                position: absolute;
+                top: 2897px;
+                left: 433.5px;
+            }
+            .end1 {
+                padding-right: 27px;
+            }
+            .final {
+                color: #616161;
+                position: absolute;
+                top: 2902px;
+                left: 1090.5px;
+            }
+            a {
+                text-decoration: none;
+                color: #262626;
+            }
+            a.link {
+                color:#0067b8;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://support.microsoft.com/ru-ru/windows#pchealthcheck"><img class="big-image-1" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP4-1399x600"></a>
+        <img class="micro-logo" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft logo" height="23">
+        <div class="text family">
+            <p class="text-1">Разработано для жизни —</p>
+            <p class="text-2">сегодня и в будущем</p>
+        </div>
+        <div class="text text1 family">
+            <p class="l">Следующее поколение игр. Ваши цели. Друзья и </p>
+            <p class="l">семья. С Windows 11 вы станете еще ближе к тому,</p>
+            <p class="l">что успели полюбить.</p>
+        </div>
+        <a href="https://support.microsoft.com/ru-ru/windows#pchealthcheck"><button class="checking family">Проверьте, готов ли ваш ПК</button></a>
+        <div class="text2 family">
+            <p><span class="text2-1"><a href="https://www.microsoft.com/ru-ru/microsoft-365?rtc=1">Microsoft 365</a></span><span class="text2-1"><a href="https://www.microsoft.com/ru-ru/microsoft-365/microsoft-office?rtc=1">Office</a></span><span class="text2-1"><a href="https://support.microsoft.com/ru-ru/windows">Windows</a></span><span class="text2-1"><a href="https://support.microsoft.com/ru-ru">Поддержка</a></span></p>
+        </div>
+        <div class="products family">
+            <span class="prod-1">Продукты Майкрософт</span>
+        </div>
+        <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1675791174&rver=7.3.6960.0&wp=MBI_SSL&wreply=https%3a%2f%2fwww.microsoft.com%2frpsauth%2fv1%2faccount%2fSignInCallback%3fstate%3deyJSdSI6Imh0dHBzOi8vd3d3Lm1pY3Jvc29mdC5jb20vcnUta3oiLCJMYyI6IjQwOTYiLCJIb3N0Ijoid3d3Lm1pY3Jvc29mdC5jb20ifQ&lc=1033&id=74335&aadredir=0"><img class="login" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' stroke='%23707070'%3E%3Cg class='mectrl_stroke' stroke-width='1.9' fill='none'%3E%3Ccircle cx='32' cy='32' r='30.25'/%3E%3Cg transform='matrix(1.1 0 0 1.1 8.8 5.61)'%3E%3Ccircle class='mectrl_stroke' cx='20' cy='16' r='7'/%3E%3Cpath class='mectrl_stroke' d='M30 35h10m-5-5v10M30.833 32.09A11 11 0 009 34'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"></a>
+        <span class="find"><a href="" alt="Поиск на Microsoft.com"><img src="find.png" width="30"></a></span>
+        <div class="image">
+            <img class="images m-365" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-M365-Icon-Bounce-Word-Merch?wid=517&hei=293&fit=crop">
+            <img class="images m-edge point" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=517&hei=293&fit=crop">
+            <img class="images drive point" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=517&hei=293&fit=crop">
+            <img class="images note point" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=517&hei=293&fit=crop">
+        </div>
+        <div class="under-images">
+            <h2 class="family m-365 under">Microsoft 365</h2>
+            <h2 class="family m-edge under">Microsoft Edge</h2>
+            <h2 class="family drive under">Microsoft OneDrive</h2>
+            <h2 class="family note under">OneNote</h2>
+        </div>
+        <div class="p m-365 family">
+            <!-- <p class="p p1 family m-365 margin">Приложения и функции, которые помогут вам воплотить идеи в реальность, оставаться в безопасности и сосредоточиться на важных вещах в жизни.</p> -->
+            <p class="l1">Приложения и функции, которые</p>
+            <p class="l1">помогут вам воплотить идеи в</p>
+            <p class="l1">реальность, оставаться в</p>
+            <p class="l1">безопасности и сосредоточиться на</p>
+            <p class="l1">важных вещах в жизни.</p>
+        </div>
+        <div class="p m-edge family">
+            <p class="l1">Потрясающая производительность,</p>
+            <p class="l1">больше конфиденциальности,</p>
+            <p class="l1">продуктивности и дополнительных</p>
+            <p class="l1">возможностей.</p>
+        </div>
+        <div class="p drive family">
+            <p class="l1">Сохраняйте свои файлы и</p>
+            <p class="l1">фотографии на OneDrive — они</p>
+            <p class="l1">будут доступны с любого</p>
+            <p class="l1">устройства и где угодно.</p>
+        </div>
+        <div class="p note family">
+            <p class="l1">Приведите свои заметки и дела в</p>
+            <p class="l1">порядок.</p>
+        </div>
+        <div class="p1 m-365 one family point">
+            <a class="link" href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_CPH1a_M365Personal"><p class="one1">Для 1 человека </p></a>
+        </div>
+        <div class="p1 m-365 six family point">
+            <a class="link" href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?icid=mscom_marcom_CPH1b_M365Family"><p class="one1">До 6 человек </p></a>
+        </div>
+        <div class="p1 m-edge download family point">
+            <a class="link" href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3"><p class="one1">Скачать </p></a>
+        </div>
+        <div class="p1 drive podrobnee family point">
+            <a class="link" href="https://www.microsoft.com/ru-ru/microsoft-365/onedrive/online-cloud-storage?icid=mscom_marcom_CPH3a_OneDrive"><p class="one1">Подробнее </p></a>
+        </div>
+        <div class="p1 note know family point">
+            <a class="link" href="https://www.microsoft.com/ru-ru/microsoft-365/onenote/digital-note-taking-app?icid=mscom_marcom_CPH4a_OneNote"><p class="one1">Узнать больше </p></a>
+        </div>
+        <img class="big-image-2 m-365 point" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Hero-MSCOM-Outlook-iOS-Android:VP4-1260x600">
+        <div class="out outlook1 family point">
+            <p class="l2">Outlook для iOS и</p>
+            <p class="l2">Android</p>
+        </div>
+        <div class="out outlook2 family point">
+            <p class="l3">Будьте на связи. Организовывайте.</p>
+            <p class="l3">Успевайте больше.</p>
+        </div>
+        <a href="https://www.microsoft.com/ru-ru/microsoft-365/outlook-mobile-for-android-and-ios?icid=mscom_marcom_MPH1a_OutlookApp"><button class="downloading family point">Скачать</button></a>
+        <div class="family">
+            <p class="business m-365 ">Для бизнеса</p>
+        </div>
+        <div class="image1 point">
+            <img class="images1 m-365" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Microsoft-Teams-Commercial?wid=406&hei=230&fit=crop">
+            <img class="images1 m-edge" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Brand-Hybrid-Work?wid=406&hei=230&fit=crop">
+            <img class="images1 drive" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/JIC-DPS-CP01?wid=406&hei=230&fit=crop">
+            <img class="images1 note" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Apps-CP-EdgeBingLifeStyle?wid=406&hei=230&fit=crop">
+        </div>
+        <div class="under-images1 under1 m-365 point">
+            <p class="family l4">Скачайте Microsoft </p>
+            <p class="family l4">Teams бесплатно</p>
+        </div>
+        <div class="under-images1 under1 m-edge point">
+            <p class="family m-edge l4">Встречайте гибридный</p>
+            <p class="family m-edge l4">мир</p>
+        </div>
+        <div class="under-images1 under1 drive point">
+            <p class="family drive l4">Добро пожаловать в</p>
+            <p class="family drive l4">Windows 365 Cloud PC</p>
+        </div>
+        <div class="under-images1 under1 note point">
+            <p class="family note l4">Microsoft Edge</p>
+        </div>
+        <div class="p2 p2-1 m-365 family point">
+            <p class="l1">Онлайн-собрания, чат и общее</p>
+            <p class="l1">облачное хранилище — все в</p>
+            <p class="l1">одном приложении.</p>
+        </div>
+        <div class="p2 p2-1 m-edge family point">
+            <p class="l1">Попробуйте инструменты, ресурсы</p>
+            <p class="l1">и стратегии, которые помогут</p>
+            <p class="l1">вашим сотрудникам добиться</p>
+            <p class="l1">успеха в новом мире гибкой</p>
+            <p class="l1">рабочей среды.</p>
+        </div>
+        <div class="p2 p2-1 drive family point">
+            <p class="l1">Работать с Windows в облаке</p>
+            <p class="l1">Microsoft теперь можно на любых</p>
+            <p class="l1">устройствах.</p>
+        </div>
+        <div class="p2 p2-2 note family point">
+            <p class="l1">Производительность,</p>
+            <p class="l1">совместимость, безопасность.</p>
+            <p class="l1">Браузер для бизнеса.</p>
+        </div>
+        <div class="p1 m-365 free family">
+            <a class="link" href="https://www.microsoft.com/ru-ru/microsoft-teams/free?icid=mscom_marcom_CPW1a_MicrosoftTeams&rtc=1"><p class="one1">Зарегистрироваться бесплатно </p></a>
+        </div>
+        <div class="p1 m-edge podrobnee1 family">
+            <a class="link" href="https://www.microsoft.com/ru-ru/flexibility/hybrid-work-solutions?ocid=AID3045379_QSG_57610"><p class="one1">Подробнее </p></a>
+        </div>
+        <div class="p1 drive now family">
+            <a class="link" href="https://www.microsoft.com/ru-ru/windows-365?icid=mscom_marcom_CPW3a_Windows365"><p class="one1">Попробуйте прямо сейчас </p></a>
+        </div>
+        <div class="p1 note download1 family">
+            <a class="link" href="https://www.microsoft.com/ru-ru/windows-365?icid=mscom_marcom_CPW3a_Windows365"><p class="one1">Скачать </p></a>
+        </div>
+        <div class="grey-back"></div>
+        <div class="h h1 family">
+            <p class="start l5">Что нового?</p>
+            <p class="s l5">Microsoft 365</p>
+        </div>
+        <div class="h h2 family">
+            <p class="start l5">Microsoft Store</p>
+            <p class="s l5">Профиль учетной записи</p>
+            <p class="s l5">Возврат товаров</p>
+            <p class="s l5">Отслеживание заказа</p>
+        </div>
+        <div class="h h3 family">
+            <p class="start l5">Для образования</p>
+            <p class="s l5">Microsoft для образования</p>
+            <p class="s l5">Устройства для образования</p>
+            <p class="s l5">Microsoft Teams для образования</p>
+            <p class="s l5">Microsoft 365 для образования</p>
+            <p class="s l5">Office для образования</p>
+            <p class="s l5">Подготовка и профессиальное развитие преподавателей</p>
+            <p class="s l5">Специальные предложения для учащихся и родителей</p>
+            <p class="s l5">Azure для учащхся</p>
+        </div>
+        <div class="h h4 family">
+            <p class="start l5">Для бизнеса</p>
+            <p class="s l5">Microsoft Cloud</p>
+            <p class="s l5">Microsoft Security</p>
+            <p class="s l5">Azure</p>
+            <p class="s l5">Dynamics 365</p>
+            <p class="s l5">Microsoft 365</p>
+            <p class="s l5">Microsoft Advertising</p>
+            <p class="s l5">Microsoft для промышленности</p>
+            <p class="s l5">Microsoft Teams</p>
+        </div>
+        <div class="h h5 family">
+            <p class="start l5">Разработчики и ИТ</p>
+            <p class="s l5">Центр разработчиков</p>
+            <p class="s l5">Документация</p>
+            <p class="s l5">Microsoft Learn</p>
+            <p class="s l5">Microsoft Tech</p>
+            <p class="s l5">Azure marketplace</p>
+            <p class="s l5">AppSource</p>
+            <p class="s l5">Microsoft Power Platform</p>
+            <p class="s l5">Visual Studio</p>
+        </div>
+        <div class="h h6 family">
+            <p class="start l5">Компания</p>
+            <p class="s l5">Вакансии</p>
+            <p class="s l5">О корпорации Майкрософт</p>
+            <p class="s l5">Инвесторы</p>
+            <p class="s l5">Экологическая устойчивость</p>
+        </div>
+        <span class="globus"><img src="micro1.png" width="39"></span>
+        <p class="s lan family">Русский (Казахстан)</p>
+        <p class="end family"><span class="s end1">Связаться с Microsoft</span><span class="s end1">Конфиденциальность</span><span class="s end1">Условия использования</span><span class="s end1">Товарные знаки</span><span class="s end1">Сведения о рекламе</span></p>
+        <p class="final s family">© Microsoft 2023</p>
+    </body>
+</html>

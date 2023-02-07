@@ -6,6 +6,9 @@
                 height: 899px;
                 width: 895.5px;
             }
+            .point {
+                cursor: pointer;
+            }
             .logo {
                 position: absolute;
                 height: 106px;
@@ -36,6 +39,7 @@
                 top: 132px;
                 left: 722px;
                 box-shadow: 3px 3px 3px -4px black;
+                border: 1px solid rgb(219, 219, 219);
                 border-radius: 10px;
             }
             .family {
@@ -170,6 +174,7 @@
             }
             .cr:hover, .l:hover, .l1:hover, .forget:hover  {
                 text-decoration: underline;
+                cursor: pointer;
             }
             .plus {
                 color:#8a8d91;;
@@ -181,6 +186,7 @@
                 cursor: pointer;
                 font-size: 25px;
                 font-weight: bold;
+                text-align: center;
             }
         </style>
     </head>
@@ -193,11 +199,11 @@
         <div class="authorization"></div>
         <input class="input1 family in" type="email" placeholder="Электронный адрес или номер телефона" required>
         <input class="input2 family in" type="password" placeholder="Пароль" required>
-        <button class="sub family" type="submit">Вход</button>
+        <button class="sub family point" type="submit">Вход</button>
         <!-- <input class="sub" type="submit" value="Вход"> -->
-        <p class="forget family">Забыли пароль?</p>
+        <p class="forget family point">Забыли пароль?</p>
         <div class="line"></div>
-        <button class="new-acc family">Создать новый аккаунт</button>
+        <button class="new-acc family point">Создать новый аккаунт</button>
         <div class="create-acc">
             <p class="p2 family"><span class="cr">Создать Cтраницу</span> знаменитости, музыкальной группы или <br> компании.</p>
         </div>
