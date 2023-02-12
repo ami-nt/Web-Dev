@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <script>
+            alert(alert(1) || 2 || alert(3));
+            //first of all, it will be 1, because the first OR operand evaluates message of "1"
+            //secondly, it will be 2, because the second OR operand evaluates truthy value "2", and will stop there
+        </script>
+    </body>
+</html>
