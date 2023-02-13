@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            //1
+            function checkAge(age) {
+                if (age > 18) {
+                  return true;
+                } else {
+                  return confirm('Did parents allow you?');
+                }
+            }
+            //2
+            function checkAge(age) {
+                if (age > 18) {
+                  return true;
+                }
+                return confirm('Did parents allow you?');
+            }
+            //there is no difference between them, because in the first func if condition doesn't work, then it will return confirm
+            //in the second func, if condition doesn't work, then it goes down, and return confirm
+        </script>
+    </body>
+</html>
