@@ -1,0 +1,13 @@
+<!-- <p>product-details works!</p> -->
+
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <img src={{product.image}} alt={{product.name}} height="140">
+  <h4><span class="s">Rating of the product: </span>{{ product.rating}} <img src="http://cdn.onlinewebfonts.com/svg/img_397133.png" height="15"></h4>
+  <h4><span class="s">Price of the product: </span>{{ product.price }} ₸</h4>
+  <p>Description: {{ product.description }}.</p>
+  <a href = "https://t.me/share/url?url={{product.link}}&text={text}"><button class="telegram b">Share on Telegram</button></a>
+  <a href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text={{product.link}}"><button class="b">Share on WhatsApp</button></a>
+</div>
