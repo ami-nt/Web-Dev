@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { CategoryComponent } from './category/category.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: '', component: CategoryComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
     ])
   ],
@@ -21,6 +23,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     AppComponent,
     TopBarComponent,
     ProductListComponent,
+    CategoryComponent,
     ProductDetailsComponent
   ],
   bootstrap: [
@@ -28,10 +31,3 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
   ]
 })
 export class AppModule { }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

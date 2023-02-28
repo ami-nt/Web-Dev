@@ -1,34 +1,28 @@
-<h2>Products</h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="items" *ngFor="let product of products">
+  <div *ngIf="categoryy == product.category">
+    <h3>
+      <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+      </a>
+    </h3>
+  
+  
+    <img class="product" src={{product.image[0]}} height="140">
+    <h4><span class="s">Price: </span>{{ product.price }} ₸</h4>
+    <h4><span class="s">Rating: </span>{{ product.rating }} <img src="http://cdn.onlinewebfonts.com/svg/img_397133.png" height="20"></h4>
+    <div>
+      <button class="like" (click)="product.like=product.like+1"><img src="https://webstockreview.net/images/hearts-vector-png-7.png" height="20"></button>
+      <h4 class="text">{{ product.like }}</h4>
+      <button class="trash" (click)="removeItem(product.id)" >
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+    </div>
 
-<div *ngFor="let product of products">
-  <h3>
-    <a
-    [title]="product.name + ' details'"
-    [routerLink]="['/products', product.id]">
-    {{ product.name }}
-    </a>
-  </h3>
-
-
-  <img class="product" src={{product.image[0]}} height="140">
-  <h4><span class="s">Price: </span>{{ product.price }} ₸</h4>
-  <h4><span class="s">Rating: </span>{{ product.rating}} <img src="http://cdn.onlinewebfonts.com/svg/img_397133.png" height="12"></h4>
-  <a href={{product.link}} alt="Kaspi"><img src="https://troublemakers.tv/wp-content/uploads/Client_kaspi.png" height="36"></a>
-  <!-- <div>
-    <button type="button" (click)="share()">
-      Share
-    </button>
-  </div> -->
+    <div>
+      <a href={{product.link}} alt="Kaspi"><img src="https://troublemakers.tv/wp-content/uploads/Client_kaspi.png" height="36"></a>
+    </div>
 </div>
 
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
