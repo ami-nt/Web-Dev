@@ -1,8 +1,7 @@
 <!-- <p>product-details works!</p> -->
 <div class="item">
-  <h2>Product Details</h2>
-  
   <div *ngIf="product">
+    <h2>Product Details</h2>
     <h3>{{ product.name }}</h3>
     <div class="i" style="display: flex; flex-direction: row; align-items: center;">
       <img *ngFor="let image of product.image" class="i" src={{image}} alt={{product.name}} style="height: auto;  width: auto;  max-height: 140px; max-width: 140px; ">

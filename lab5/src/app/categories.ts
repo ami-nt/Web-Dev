@@ -4,15 +4,15 @@ export interface Category {
 
 export const categories = [
   {
-      name: 'Telephone and gadgets'
+    name: 'Telephone and gadgets'
   },
   {
-      name: 'Jewelries'
+    name: 'Jewelries'
   },
   {
-      name: 'Accessories'
+    name: 'Accessories'
   },
   {
-      name: 'Beauty And Health'
+    name: 'Beauty And Health'
   }
 ]
