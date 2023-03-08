@@ -3,13 +3,13 @@ let input = document.getElementById("new-task");
 let addBut = document.getElementsByTagName("button")[0];
 let tasks = document.getElementById("tasks");
 
-addBut.addEventListener("keyup", () => {
-    if(input.value.trim() != 0 ){
-        addBut.classList.add(" active");
-    } else{
-        addBut.classList.remove(" active");
-    }
-})
+// addBut.addEventListener("keyup", () => {
+//     if(input.value.trim() != 0 ){
+//         addBut.classList.add(" active");
+//     } else{
+//         addBut.classList.remove(" active");
+//     }
+// })
 
 addBut.addEventListener("click", () => {
     // console.log(input.value);

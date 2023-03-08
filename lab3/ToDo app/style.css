@@ -36,7 +36,7 @@ body {
     border-radius: 6px;
     font-size: 16px;
     font-weight: 400;
-    outline: none;
+    /* outline: none; */
     margin-left: 40px;
     margin-right: 30px;
     width: 300px;
@@ -57,10 +57,10 @@ button {
     pointer-events: none; */
 }
 
-button.active {
+/* button.active {
     opacity: 1;
     pointer-events: all;
-}
+} */
 
 #tasks {
     width: 100%;
