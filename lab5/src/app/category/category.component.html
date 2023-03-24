@@ -9,9 +9,9 @@
         </span>
     </div>
     
-    <span *ngFor="let category of categories">
-        <span *ngIf="choice == category.name">
-            <app-product-list [categoryy]="category.name"></app-product-list>
-        </span>
-    </span>
+    <!-- <span *ngFor="let category of categories"> -->
+        <!-- <span *ngIf="choice == category.name"> -->
+            <app-product-list [categoryy]="choice"></app-product-list>
+        <!-- </span> -->
+    <!-- </span> -->
 </div>

@@ -15,8 +15,8 @@ h2 {
 .photo-entry {
   width: 100%;
   display: inline-grid;
-  grid-template-columns: 25px auto 20px;
-  grid-column-gap: 20px;
+  grid-template-columns: 30px auto 80px;
+  grid-column-gap: 80px;
   border-bottom: 1px solid rgb(119, 173, 144);
   margin-top: 5px;
   margin-bottom: 5px;

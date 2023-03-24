@@ -16,8 +16,8 @@ export class AlbumDetailComponent implements OnInit {
   loaded!: boolean;
 
   constructor(private route: ActivatedRoute,
-              private location: Location,
-              private albumsService: AlbumsService) {
+    private location: Location,
+    private albumsService: AlbumsService) {
   }
 
   ngOnInit(): void {
@@ -41,6 +41,7 @@ export class AlbumDetailComponent implements OnInit {
       this.loaded = true;
     });
   }
+  
   goBack() {
     this.location.back();
   }
